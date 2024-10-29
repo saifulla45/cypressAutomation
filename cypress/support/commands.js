@@ -23,3 +23,22 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login',(email,password)=>{
+    cy.get('#email').type(email);
+    cy.get('#login-password').type(password);
+    cy.get('#login').click();
+    cy.get('#dropdownMenu1').should('exist');
+})
+
+Cypress.Commands.add('logout',()=>{
+    cy.get('#dropdownMenu1').click();                                                                                              
+    cy.contains('Logout').click();
+    cy.get('a[href="/login"]').should('have.text','Sign In')
+})
+
+Cypress.Commands.add('searchCourse',(category,searchText)=>{
+    cy.get('select[name="categories"]').select(category);
+    cy.get('input[name="course"]').type(searchText);
+    cy.get('.find-course search-course').click();
+})

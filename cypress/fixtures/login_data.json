@@ -1,0 +1,13 @@
+{
+    "testid1": {
+        "email" : "saifulla.attar5227@gmail.com",
+        "password" : "S@!f23755"
+    },
+    "testid2": {
+        "email" : "{backspace}",
+        "password" : "S@!f23755"
+    },"testid3": {
+        "email" : "saifulla.attar@gmail.com",
+        "password" : "S@!f23755"
+    }
+}
