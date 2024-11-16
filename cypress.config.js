@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "jxvr6r",
   defaultCommandTimeout: 6000,
   video:true,
   screenshotOnRunFailure:true,

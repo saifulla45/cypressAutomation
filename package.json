@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:chromeBrowser": "npx cypress run --spec .//cypress//e2e//login_demo.cy.js --browser chrome"
+    "test:chromeBrowser": "npx cypress run --spec .//cypress//e2e//login_demo.cy.js --browser chrome",
+    "test:runInCloud":"npx cypress run --record --key 84b55dae-4e3b-49d7-a9a6-b1e6db346e33 --spec .//cypress//e2e//login_demo.cy.js --browser chrome"
   },
   "repository": {
     "type": "git",
